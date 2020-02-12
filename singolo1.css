@@ -1,3 +1,93 @@
-h1 {
-    color: red;
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 1020px;
+    margin: 0 auto;
+}
+/*Our Services Block*/
+.services-block__layout {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+.services-block__description {
+    text-align: left;
+    padding: 65px 10px 55px;
+}
+.services-block__description-title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    padding-bottom: 30px;
+}
+.services-block__description-text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+.services-block__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.services-block__container-item {
+    width: 300px;
+    height: 86px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px 40px 10px;
+}
+.services-block__container-item:nth-child(n+4) {
+    padding-bottom: 0;
+}
+.services-block__container-item-description {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    padding: 0 0 0 20px;
+}
+.services-block__container-item-description--third {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    padding: 0 0 0 20px;
+}
+.services-block__container-item-description-title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 16px 0;
+}
+.services-block__container-item-description-text {
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+.services-block__container-item-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid #666d89;
+    display: flex;
+    justify-content: center;
+}
+.services-block__container-item-icon-image {
+    align-self:center;
 }

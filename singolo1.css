@@ -19,8 +19,9 @@ header {
 }
 .logo {
     display: flex;
-    justify-content: center;
-    height: 90px;
+    justify-content: start;
+    width: 50%;
+    height: 96px;
 }
 .logo__title {
     font-size: 25px;
@@ -29,22 +30,33 @@ header {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    margin: auto;
+    margin: auto 0;
 }
 .logo__star {
     color: #f06c64;
     font-size: 25px;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 .navigation {
+    width: 50%;
+}
+.navigation__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin: 0;
+    padding-top: 35px;
 }
-.navigation__item {
+.navigation__list-item {
     list-style-type: none;
-    padding: 10px;
+    padding: 0 15px;
 }
-.navigation__item-link {
+.navigation__list-item:nth-child(5) {
+    padding-right: 0;
+}
+.navigation__list-item:nth-child(1) {
+    padding-left: 0;
+}
+.navigation__list-item-link {
     text-decoration: none;
     font-size: 12px;
     line-height: 6px;
@@ -54,7 +66,7 @@ header {
     text-align: left;
     text-transform: uppercase;
 }
-.navigation__item-link:hover {
+.navigation__list-item-link:hover {
     cursor: pointer;
     color: #f06c64;
 }

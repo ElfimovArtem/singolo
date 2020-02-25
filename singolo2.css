@@ -14,6 +14,7 @@ body {
 .portfolio__layout {
     display: flex;
     flex-direction: column;
+    padding: 0 30px;
 }
 .portfolio__title {
     font-size: 30px;
@@ -81,4 +82,83 @@ body {
 }
 .portfolio_gallery-item-image {
     position: absolute;
+}
+/*about-us*/
+.about-us__layout {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+.about-us__title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-align: left;
+    padding: 0 10px;
+}
+.about-us__description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    padding: 0 10px;
+}
+.about-us__gallery {
+    display: flex;
+    flex-direction: row;
+}
+.about-us__gallery-block {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 0 10px;
+}
+.about-us__gallery-block-image {
+    width: 300px;
+    height: 300px;
+}
+.about-us__gallery-block-image-photo {
+    width: 100%;
+    height: 100%;
+}
+.about-us__gallery-block-title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-align: left;
+}
+.about-us__gallery-block-text {
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+.about-us__gallery-block-social {
+    display: flex;
+    justify-content: start;
+}
+.about-us__gallery-block-social-item {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #666d89;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+.about-us__gallery-block-social-item:nth-child(4) {
+    margin-right: 0;
+}
+.about-us__gallery-block-social-item-link {
+    text-decoration: none;
+    display: block;
+    margin: auto 0;
 }

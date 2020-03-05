@@ -209,13 +209,13 @@ header {
     position: absolute;
     z-index: 2;
     bottom: 297px;
-    right: 441px;
+    right: 442px;
 }
 .slider-block__phones-horizontal-square {
     position: absolute;
     z-index: 3;
     bottom: 310px;
-    right: 454px;
+    right: 455px;
 }
 .slider-block__right-arrow {
     width: 70px;
@@ -675,6 +675,25 @@ header {
     text-decoration: none;
     color: #f0d8d9;
 }
+.get-a-quote__container-contact-bar-item-link:hover {
+    color: #ffffff;
+}
+.get-a-quote__container-form-button {
+    background: transparent;
+    border: 1px solid #f0d8d9;
+    color: #ffffff;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.get-a-quote__container-form-button:hover {
+    cursor: pointer;
+    background: #ffffff;
+    color: #666d89;
+}
+.get-a-quote__container-form-button:active {
+    transform: scale(0.95, 0.95);
+}
 /*footer*/
 footer {
     background-color: #2d303a;
@@ -693,7 +712,7 @@ footer {
     line-height: 22px;
     font-family: 'Lato', sans-serif;
     color: #666d89;
-    word-spacing: -1px;
+    word-spacing: -0.7px;
     padding-left: 1px;
 }
 .footer__layout-text-social {

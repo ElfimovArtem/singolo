@@ -421,12 +421,24 @@
               condimentum nibh.
             </span>
             <div class="get-a-quote__container">
-              <form class="get-a-quote__container-form" method="post">
+              <form class="get-a-quote__container-form" method="POST">
                 <label>
-                  <input class="get-a-quote__container-form-input" type="text" name="name" placeholder="Name (Required)">
+                  <input
+                  class="get-a-quote__container-form-input"
+                  type="text"
+                  name="name"
+                  placeholder="Name (Required)"
+                  required
+                  >
                 </label>
                 <label>
-                  <input class="get-a-quote__container-form-input" type="email" name="email" placeholder="Email (Required)">
+                  <input
+                  class="get-a-quote__container-form-input"
+                  type="email"
+                  name="email"
+                  placeholder="Email (Required)"
+                  required
+                  >
                 </label>
                 <label>
                   <input class="get-a-quote__container-form-input" type="text" name="subject" placeholder="Subject">
@@ -434,6 +446,7 @@
                 <label>
                   <textarea class="get-a-quote__container-form-input textarea" name="Describe" placeholder="Describe your project in detail..." cols="40" rows="10"></textarea>
                 </label>
+                <button class="get-a-quote__container-form-button" type="submit" formmethod="POST">Submit</button>
               </form>
               <div class="get-a-quote__container-contact">
                 <h3 class="get-a-quote__container-contact-title">Contact Information</h3>

@@ -70,9 +70,13 @@ header {
     text-align: left;
     text-transform: uppercase;
 }
-.navigation__list-item-link:hover {
+.navigation__list-item-link:not(.active):hover {
     cursor: pointer;
     color: #f06c64;
+}
+.active {
+    color: #E70000;
+    cursor: default;
 }
 /*Slider Block*/
 .slider-block {
@@ -236,6 +240,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 1px 30px 0 30px;
+    position: relative;
 }
 .services-block__description {
     text-align: left;
@@ -328,6 +333,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 0 30px;
+    position: relative;
 }
 .portfolio__title {
     font-size: 30px;
@@ -388,17 +394,17 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
-.portfolio_gallery-item {
+.portfolio__gallery-item {
     width: 220px;
     height: 187px;
     overflow: hidden;
     position: relative;
     margin: 0 10px 20px 10px;
 }
-.portfolio_gallery-item:nth-child(n+9) {
+.portfolio__gallery-item:nth-child(n+9) {
     margin-bottom: 0;
 }
-.portfolio_gallery-item-image {
+.portfolio__gallery-item-image {
     position: absolute;
 }
 .first {
@@ -449,6 +455,12 @@ header {
     top: -60px;
     right: -40px;
 }
+.portfolio__gallery-item:hover {
+    cursor: pointer;
+}
+.active-item {
+
+}
 /*about-us*/
 .about-us {
     background-color: #f2f2f2;
@@ -459,6 +471,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 43px 30px 0 30px;
+    position: relative;
 }
 .about-us__title {
     font-size: 30px;
@@ -737,4 +750,46 @@ footer {
     top: 0;
     bottom: 0;
     right: 0;
+}
+.home-btn__services {
+    text-decoration: none;
+    color: #666d89;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: -50px;
+    left: 485px;
+    text-transform: uppercase;
+}
+.home-btn__services:hover {
+    color: #f06c64;
+}
+.home-btn__portfolio {
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: -50px;
+    left: 485px;
+    text-transform: uppercase;
+}
+.home-btn__portfolio:hover {
+    color: #f06c64;
+}
+.home-btn__about {
+    text-decoration: none;
+    color: #666d89;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: -50px;
+    left: 485px;
+    text-transform: uppercase;
+}
+.home-btn__about:hover {
+    color: #f06c64;
 }

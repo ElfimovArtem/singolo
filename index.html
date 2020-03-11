@@ -18,21 +18,22 @@
           <span class="logo__star">*</span>
         </div>
         <nav class="navigation">
-          <ul class="navigation__list">
+          <a name="Home"></a>
+          <ul class="navigation__list" id="NAVIGATION_LIST">
             <li class="navigation__list-item">
-              <a class="navigation__list-item-link" href="#">Home</a>
+              <a class="navigation__list-item-link active">Home</a>
             </li>
             <li class="navigation__list-item">
-              <a class="navigation__list-item-link" href="#">Services</a>
+              <a class="navigation__list-item-link" href="#Services">Services</a>
             </li>
             <li class="navigation__list-item">
-              <a class="navigation__list-item-link" href="#">Portfolio</a>
+              <a class="navigation__list-item-link" href="#Portfolio">Portfolio</a>
             </li>
             <li class="navigation__list-item">
-              <a class="navigation__list-item-link" href="#">About</a>
+              <a class="navigation__list-item-link" href="#About">About</a>
             </li>
             <li class="navigation__list-item">
-              <a class="navigation__list-item-link" href="#">Contact</a>
+              <a class="navigation__list-item-link" href="#Contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -142,6 +143,7 @@
     </div>
   </div>
   <div class="services-block">
+    <a name="Services"></a>
     <div class="wrapper">
       <div class="services-block__layout">
         <div class="services-block__description">
@@ -233,10 +235,12 @@
             </div>
           </section>
         </div>
+        <a class="home-btn__services" href="#Home">Home</a>
       </div>
     </div>
   </div>
   <section class="portfolio">
+    <a name="Portfolio"></a>
       <div class="wrapper">
         <div class="portfolio__layout">
           <h2 class="portfolio__title">Portfolio</h2>
@@ -257,48 +261,50 @@
               <a class="portfolio__navigation-item-link" href="#">Artwork</a>
             </li>
           </ul>
-          <div class="portfolio__gallery">
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image first" src="assets/portfolio/Layer1.png" alt="layer-1">
+          <div class="portfolio__gallery" id="PORTFOLIO-GALLERY">
+            <div class="portfolio__gallery-item active-item">
+              <img class="portfolio__gallery-item-image first" src="assets/portfolio/Layer1.png" alt="layer-1">
             </div>
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image second" src="assets/portfolio/Layer2.png" alt="layer-2">
+            <div class="portfolio__gallery-item">
+              <img class="portfolio__gallery-item-image second" src="assets/portfolio/Layer2.png" alt="layer-2">
             </div>
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image third" src="assets/portfolio/Layer3.png" alt="layer-3">
+            <div class="portfolio__gallery-item">
+              <img class="portfolio__gallery-item-image third" src="assets/portfolio/Layer3.png" alt="layer-3">
             </div>
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image fourth" src="assets/portfolio/Layer4.png" alt="layer-4">
+            <div class="portfolio__gallery-item">
+              <img class="portfolio__gallery-item-image fourth" src="assets/portfolio/Layer4.png" alt="layer-4">
             </div>
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image fifth" src="assets/portfolio/Layer5.png" alt="layer-5">
+            <div class="portfolio__gallery-item">
+              <img class="portfolio__gallery-item-image fifth" src="assets/portfolio/Layer5.png" alt="layer-5">
             </div>
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image  sixth" src="assets/portfolio/Layer6.png" alt="layer-6">
+            <div class="portfolio__gallery-item">
+              <img class="portfolio__gallery-item-image  sixth" src="assets/portfolio/Layer6.png" alt="layer-6">
             </div>
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image seventh" src="assets/portfolio/Layer7.png" alt="layer-7">
+            <div class="portfolio__gallery-item">
+              <img class="portfolio__gallery-item-image seventh" src="assets/portfolio/Layer7.png" alt="layer-7">
             </div>
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image eighth" src="assets/portfolio/Layer8.png" alt="layer-8">
+            <div class="portfolio__gallery-item">
+              <img class="portfolio__gallery-item-image eighth" src="assets/portfolio/Layer8.png" alt="layer-8">
             </div>
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image ninth" src="assets/portfolio/Layer9.png" alt="layer-9">
+            <div class="portfolio__gallery-item">
+              <img class="portfolio__gallery-item-image ninth" src="assets/portfolio/Layer9.png" alt="layer-9">
             </div>
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image tenth" src="assets/portfolio/Layer10.png" alt="layer-10">
+            <div class="portfolio__gallery-item">
+              <img class="portfolio__gallery-item-image tenth" src="assets/portfolio/Layer10.png" alt="layer-10">
             </div>
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image eleventh" src="assets/portfolio/Layer11.png" alt="layer-11">
+            <div class="portfolio__gallery-item">
+              <img class="portfolio__gallery-item-image eleventh" src="assets/portfolio/Layer11.png" alt="layer-11">
             </div>
-            <div class="portfolio_gallery-item">
-              <img class="portfolio_gallery-item-image twelfth" src="assets/portfolio/Layer12.png" alt="layer-12">
+            <div class="portfolio__gallery-item">
+              <img class="portfolio__gallery-item-image twelfth" src="assets/portfolio/Layer12.png" alt="layer-12">
             </div>
+            <a class="home-btn__portfolio" href="#Home">Home</a>
           </div>
         </div>
       </div>
     </section>
     <section class="about-us">
+      <a name="About"></a>
       <div class="wrapper">
         <div class="about-us__layout">
           <h2 class="about-us__title">About Us</h2>
@@ -405,6 +411,7 @@
               </div>
             </div>
           </div>
+          <a class="home-btn__about" href="#Home">Home</a>
         </div>
       </div>
     </section>
@@ -421,6 +428,7 @@
               condimentum nibh.
             </span>
             <div class="get-a-quote__container">
+              <a name="Contact"></a>
               <form class="get-a-quote__container-form" method="POST">
                 <label>
                   <input

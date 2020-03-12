@@ -44,100 +44,111 @@
     <div class="wrapper">
       <div class="slider-block__layout">
         <div class="slider-block__left-arrow">
-          <a href="#">
-            <img class="slider-block__left-arrow-ico" src="assets/slider-block/arrow/left.png" alt="left arrow">
-          </a>
+          <img
+            class="slider-block__left-arrow-ico"
+            src="assets/slider-block/arrow/left.png"
+            alt="left arrow"
+            onclick="minusSlide()"
+          >
         </div>
-        <div class="slider-block__phones">
-          <div class="slider-block__phones-vertical">
-            <img class="slider-block__phones-vertical-base" src="assets/slider-block/vertical/Base-v.png" alt="base">
-            <img
-              class="slider-block__phones-vertical-outer"
-              src="assets/slider-block/vertical/Outer-Circle-v.png"
-              alt="outer"
-            >
-            <img
-              class="slider-block__phones-vertical-dot"
-              src="assets/slider-block/vertical/Red-Dot-v.png"
-              alt="dot"
-            >
-            <img
-              class="slider-block__phones-vertical-speaker"
-              src="assets/slider-block/vertical/Speaker-v.png"
-              alt="speaker"
-            >
-            <div class="slider-block__phones-vertical-screen" id="VERTICAL_SCREEN">
+        <div class="slider-container">
+          <div class="slider-block__phones slider-item">
+            <div class="slider-block__phones-vertical">
+              <img class="slider-block__phones-vertical-base" src="assets/slider-block/vertical/Base-v.png" alt="base">
               <img
-                class="slider-block__phones-vertical-screen-layer active-screen"
-                src="assets/slider-block/vertical/Layer-v.png"
-                alt="layer"
+                class="slider-block__phones-vertical-outer"
+                src="assets/slider-block/vertical/Outer-Circle-v.png"
+                alt="outer"
+              >
+              <img
+                class="slider-block__phones-vertical-dot"
+                src="assets/slider-block/vertical/Red-Dot-v.png"
+                alt="dot"
+              >
+              <img
+                class="slider-block__phones-vertical-speaker"
+                src="assets/slider-block/vertical/Speaker-v.png"
+                alt="speaker"
+              >
+              <div class="slider-block__phones-vertical-screen" id="VERTICAL_SCREEN">
+                <img
+                  class="slider-block__phones-vertical-screen-layer active-screen"
+                  src="assets/slider-block/vertical/Layer-v.png"
+                  alt="layer"
+                >
+              </div>
+              <img
+                class="slider-block__phones-vertical-circle"
+                src="assets/slider-block/vertical/Circle-v.png"
+                alt="circle"
+              >
+              <img
+                class="slider-block__phones-vertical-square"
+                src="assets/slider-block/vertical/Square-v.png"
+                alt="square"
+              >
+              <img
+                class="slider-block__phones-vertical-shadow"
+                src="assets/slider-block/vertical/Shadow-v.png"
+                alt="shadow"
               >
             </div>
-            <img
-              class="slider-block__phones-vertical-circle"
-              src="assets/slider-block/vertical/Circle-v.png"
-              alt="circle"
-            >
-            <img
-              class="slider-block__phones-vertical-square"
-              src="assets/slider-block/vertical/Square-v.png"
-              alt="square"
-            >
-            <img
-              class="slider-block__phones-vertical-shadow"
-              src="assets/slider-block/vertical/Shadow-v.png"
-              alt="shadow"
-            >
+            <div class="slider-block__phones-horizontal">
+              <img
+                class="slider-block__phones-horizontal-base"
+                src="assets/slider-block/horizontal/Base.png"
+                alt="base"
+              >
+              <img
+                class="slider-block__phones-horizontal-shadow"
+                src="assets/slider-block/horizontal/Shadow.png"
+                alt="shadow"
+              >
+              <img
+                class="slider-block__phones-horizontal-outer"
+                src="assets/slider-block/horizontal/Outer-Circle.png"
+                alt="outer-circle"
+              >
+              <img
+                class="slider-block__phones-horizontal-dot"
+                src="assets/slider-block/horizontal/Red-Dot.png"
+                alt="dot"
+              >
+              <img
+                class="slider-block__phones-horizontal-speaker"
+                src="assets/slider-block/horizontal/Speaker.png"
+                alt="speaker"
+              >
+              <div class="slider-block__phones-horizontal-screen" id="HORIZONTAL_SCREEN">
+                <img
+                  class="slider-block__phones-horizontal-screen-layer active-screen"
+                  src="assets/slider-block/horizontal/Layer.png"
+                  alt="layer"
+                >
+              </div>
+              <img
+                class="slider-block__phones-horizontal-circle"
+                src="assets/slider-block/horizontal/Circle.png"
+                alt="circle"
+              >
+              <img
+                class="slider-block__phones-horizontal-square"
+                src="assets/slider-block/horizontal/Square.png"
+                alt="square"
+              >
+            </div>
           </div>
-          <div class="slider-block__phones-horizontal">
-            <img
-              class="slider-block__phones-horizontal-base"
-              src="assets/slider-block/horizontal/Base.png"
-              alt="base"
-            >
-            <img
-              class="slider-block__phones-horizontal-shadow"
-              src="assets/slider-block/horizontal/Shadow.png"
-              alt="shadow"
-            >
-            <img
-              class="slider-block__phones-horizontal-outer"
-              src="assets/slider-block/horizontal/Outer-Circle.png"
-              alt="outer-circle"
-            >
-            <img
-              class="slider-block__phones-horizontal-dot"
-              src="assets/slider-block/horizontal/Red-Dot.png"
-              alt="dot"
-            >
-            <img
-              class="slider-block__phones-horizontal-speaker"
-              src="assets/slider-block/horizontal/Speaker.png"
-              alt="speaker"
-            >
-            <div class="slider-block__phones-horizontal-screen" id="HORIZONTAL_SCREEN">
-              <img
-                class="slider-block__phones-horizontal-screen-layer active-screen"
-                src="assets/slider-block/horizontal/Layer.png"
-                alt="layer"
-              >
-            </div>
-            <img
-              class="slider-block__phones-horizontal-circle"
-              src="assets/slider-block/horizontal/Circle.png"
-              alt="circle"
-            >
-            <img
-              class="slider-block__phones-horizontal-square"
-              src="assets/slider-block/horizontal/Square.png"
-              alt="square"
-            >
+          <div class="slider-block__second-slide slider-item">
+            <img class="slider-block__second-slide-image" src="assets/slider-block/second-slide.png" alt="second">
           </div>
         </div>
         <div class="slider-block__right-arrow">
-          <a class="slider-block__right-arrow-link" href="#">
-            <img class="slider-block__right-arrow-ico" src="assets/slider-block/arrow/right.png" alt="right arrow">
-          </a>
+          <img
+            class="slider-block__right-arrow-ico"
+            src="assets/slider-block/arrow/right.png"
+            alt="right arrow"
+            onclick="plusSlide()"
+          >
         </div>
       </div>
     </div>

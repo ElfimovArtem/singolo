@@ -89,10 +89,14 @@ header {
     display: flex;
     justify-content: space-between;
     height: 600px;
+    position: relative;
 }
 .slider-block__left-arrow {
     width: 70px;
     padding: 280px 0 0 2px;
+}
+.slider-block__left-arrow-ico:hover {
+    cursor: pointer;
 }
 .slider-block__left-arrow-ico:active {
     transform: scale(0.9, 0.9);
@@ -220,13 +224,13 @@ header {
 .slider-block__phones-horizontal-circle {
     position: absolute;
     z-index: 2;
-    bottom: 297px;
+    bottom: 227px;
     right: 442px;
 }
 .slider-block__phones-horizontal-square {
     position: absolute;
     z-index: 3;
-    bottom: 310px;
+    bottom: 240px;
     right: 455px;
 }
 .slider-block__right-arrow {
@@ -234,8 +238,37 @@ header {
     text-align: end;
     padding: 280px 0 0 0;
 }
+.slider-block__right-arrow-ico:hover {
+    cursor: pointer;
+}
 .slider-block__right-arrow-ico:active {
     transform: scale(0.9, 0.9);
+}
+.slider-container {
+    width: 100%;
+    position: relative;
+}
+.slider-block__second-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -1px;
+}
+.slider-block__second-slide-image {
+    width: 100%;
+    height: 100%;
+}
+.slider-item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: .2
+    }
+    to {
+        opacity: 1
+    }
 }
 /*Our Services Block*/
 .services-block {

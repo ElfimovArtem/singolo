@@ -1,6 +1,7 @@
 const NAVIGATION = document.getElementById('NAVIGATION_LIST');
 const MOBILE_VERTICAL_SCREEN = document.getElementById('VERTICAL_SCREEN');
 const MOBILE_HORIZONTAL_SCREEN = document.getElementById('HORIZONTAL_SCREEN');
+const SLIDES = document.getElementsByClassName('slider-item');
 // const PORTFOLIO = document.getElementById('PORTFOLIO-GALLERY');
 
 NAVIGATION.addEventListener('click', (event) => {
@@ -31,6 +32,30 @@ MOBILE_HORIZONTAL_SCREEN.addEventListener('click', (event) => {
   });
 });
 
+/*Slider*/
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlide() {
+  showSlides(slideIndex += 1);
+}
+
+function minusSlide() {
+  showSlides(slideIndex -= 1);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  if (n > SLIDES.length) slideIndex = 1;
+  if (n < 1) slideIndex = SLIDES.length;
+  for (let i = 0; i < SLIDES.length; i++) {
+    SLIDES[i].style.display = "none";
+  }
+  SLIDES[slideIndex - 1].style.display = "block";
+}
 // PORTFOLIO.addEventListener('click', (event) => {
 //   PORTFOLIO.querySelectorAll('div').forEach(el => el.classList.remove('active-item'));
 //   event.target.classList.add('active-item');

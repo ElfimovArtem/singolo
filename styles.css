@@ -599,6 +599,7 @@ header {
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
     padding-bottom: 6px;
+    position: relative;
 }
 .get-a-quote__layout {
     padding: 68px 40px 0 40px;
@@ -839,4 +840,50 @@ footer {
 }
 .active-screen {
     opacity: 1;
+}
+#message-block {
+    position: absolute;
+    width: 100%;
+    height: 655px;
+    top: 0;
+    left: 0;
+    background: #0008;
+}
+#message-block.hidden {
+    display: none;
+}
+#message {
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+}
+#close-btn {
+    border-radius: 5px;
+    padding: 2px 8px;
+    outline: none;
+}
+#close-btn.active {
+    outline: none;
+}
+#message-text {
+    font-weight: bold;
+}
+#result {
+    font-weight: normal;
+}
+#message-description {
+    font-weight: bold;
+}
+#description-text {
+    font-weight: normal;
+}
+#message-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
 }

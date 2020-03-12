@@ -2,6 +2,8 @@ const NAVIGATION = document.getElementById('NAVIGATION_LIST');
 const MOBILE_VERTICAL_SCREEN = document.getElementById('VERTICAL_SCREEN');
 const MOBILE_HORIZONTAL_SCREEN = document.getElementById('HORIZONTAL_SCREEN');
 const SLIDES = document.getElementsByClassName('slider-item');
+const BUTTON = document.getElementById('btn');
+const CLOSE_BUTTON = document.getElementById('close-btn');
 // const PORTFOLIO = document.getElementById('PORTFOLIO-GALLERY');
 
 NAVIGATION.addEventListener('click', (event) => {
@@ -56,6 +58,35 @@ function showSlides(n) {
   }
   SLIDES[slideIndex - 1].style.display = "block";
 }
+/*Form on "Get a quote"*/
+BUTTON.addEventListener('click', () => {
+  const subject = document.getElementById('subject').value.toString();
+  const description = document.getElementById('descript').value.toString();
+
+  if (subject) {
+    document.getElementById('result').innerText = subject;
+    document.getElementById('message-text').style.display = "block";
+    document.getElementById('message-text-is-absent').style.display = "none";
+  } else if (!subject) {
+      document.getElementById('message-text').style.display = "none";
+      document.getElementById('message-text-is-absent').style.display = "block";
+  }
+
+  if (description) {
+    document.getElementById('description-text').innerText = description;
+    document.getElementById('message-description').style.display = "block";
+    document.getElementById('message-description-is-absent').style.display = "none";
+  } else if (!description) {
+      document.getElementById('message-description').style.display = "none";
+      document.getElementById('message-description-is-absent').style.display = "block";
+  }
+  document.getElementById('message-block').classList.remove('hidden');
+});
+
+CLOSE_BUTTON.addEventListener('click', () => {
+  document.getElementById('message-block').classList.add('hidden');
+  document.querySelector('form').reset();
+});
 // PORTFOLIO.addEventListener('click', (event) => {
 //   PORTFOLIO.querySelectorAll('div').forEach(el => el.classList.remove('active-item'));
 //   event.target.classList.add('active-item');

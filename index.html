@@ -440,7 +440,7 @@
             </span>
             <div class="get-a-quote__container">
               <a name="Contact"></a>
-              <form class="get-a-quote__container-form" method="POST">
+              <form class="get-a-quote__container-form">
                 <label>
                   <input
                   class="get-a-quote__container-form-input"
@@ -460,12 +460,30 @@
                   >
                 </label>
                 <label>
-                  <input class="get-a-quote__container-form-input" type="text" name="subject" placeholder="Subject">
+                  <input
+                    class="get-a-quote__container-form-input"
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    id="subject"
+                  >
                 </label>
                 <label>
-                  <textarea class="get-a-quote__container-form-input textarea" name="Describe" placeholder="Describe your project in detail..." cols="40" rows="10"></textarea>
+                  <textarea
+                    class="get-a-quote__container-form-input textarea"
+                    name="Describe" placeholder="Describe your project in detail..."
+                    cols="40"
+                    rows="10"
+                    id="descript"
+                  ></textarea>
                 </label>
-                <button class="get-a-quote__container-form-button" type="submit" formmethod="POST">Submit</button>
+                <button
+                  class="get-a-quote__container-form-button"
+                  type="button"
+                  id="btn"
+                >
+                Submit
+                </button>
               </form>
               <div class="get-a-quote__container-contact">
                 <h3 class="get-a-quote__container-contact-title">Contact Information</h3>
@@ -502,6 +520,17 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div id="message-block" class="hidden">
+          <div id="message" class="hidden">
+            <p id="message-title">Письмо отправлено</p>
+            <p id="message-text-is-absent">Без темы</p>
+            <p id="message-text">Тема: <span id="result"></span></p>
+            <p id="message-description-is-absent">Без описания</p>
+            <p id="message-description">Описание: <span id="description-text"></span></p>
+            <br>
+            <button id="close-btn">ok</button>
           </div>
         </div>
       </section>

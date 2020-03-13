@@ -415,9 +415,8 @@ header {
 }
 .portfolio__navigation-item:nth-child(4) {
     margin-left: -1px;
-    width: 55px;
 }
-.portfolio__navigation-item-link {
+.portfolio__navigation-item {
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
@@ -427,8 +426,12 @@ header {
     text-align: left;
     padding: 0 5px 0 6px;
 }
-.portfolio__navigation-item-link:hover {
+.portfolio__navigation-item:hover {
     color: #dedede;
+    cursor: pointer;
+}
+.portfolio__navigation-item:active {
+    transform: scale(0.98, 0.97);
 }
 .portfolio__gallery {
     width: 960px;
@@ -886,4 +889,10 @@ footer {
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
+}
+.active-tab {
+    color: #dedede;
+    cursor: default;
+    border: 1px solid #dedede;
+    transform: none;
 }

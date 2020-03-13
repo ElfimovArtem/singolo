@@ -500,7 +500,7 @@ header {
     cursor: pointer;
 }
 .active-item {
-
+    outline: 5px solid #F06C64;
 }
 /*about-us*/
 .about-us {

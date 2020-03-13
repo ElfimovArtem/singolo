@@ -4,7 +4,7 @@ const MOBILE_HORIZONTAL_SCREEN = document.getElementById('HORIZONTAL_SCREEN');
 const SLIDES = document.getElementsByClassName('slider-item');
 const BUTTON = document.getElementById('btn');
 const CLOSE_BUTTON = document.getElementById('close-btn');
-// const PORTFOLIO = document.getElementById('PORTFOLIO-GALLERY');
+const PORTFOLIO = document.getElementById('PORTFOLIO-GALLERY');
 
 NAVIGATION.addEventListener('click', (event) => {
   NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('active'));
@@ -87,7 +87,9 @@ CLOSE_BUTTON.addEventListener('click', () => {
   document.getElementById('message-block').classList.add('hidden');
   document.querySelector('form').reset();
 });
-// PORTFOLIO.addEventListener('click', (event) => {
-//   PORTFOLIO.querySelectorAll('div').forEach(el => el.classList.remove('active-item'));
-//   event.target.classList.add('active-item');
-// });
+
+PORTFOLIO.addEventListener('click', (event) => {
+  PORTFOLIO.querySelectorAll('div').forEach(el => el.classList.remove('active-item'));
+  event.target.classList.add('active-item');
+});
+

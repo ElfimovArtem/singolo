@@ -136,7 +136,7 @@ function shuflePortfolio(event) {
 //------------------------------------
 
 PORTFOLIO.addEventListener('click', (event) => {
-  PORTFOLIO.querySelectorAll('div').forEach(el => el.classList.remove('active-item'));
+  PORTFOLIO.querySelectorAll('.border-screen').forEach(el => el.classList.remove('active-item'));
   event.target.classList.add('active-item');
 });
 

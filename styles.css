@@ -503,7 +503,7 @@ header {
     cursor: pointer;
 }
 .active-item {
-    outline: 5px solid #F06C64;
+    border: 5px solid #F06C64;
 }
 /*about-us*/
 .about-us {
@@ -895,4 +895,11 @@ footer {
     cursor: default;
     border: 1px solid #dedede;
     transform: none;
+}
+.border-screen {
+    width: 210px;
+    height: 177px;
+    background: inherit;
+    z-index: 2;
+    position: absolute;
 }

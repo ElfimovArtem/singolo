@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
     .wrapper {
         margin: 0;
         padding: 0;
@@ -251,5 +251,284 @@
     }
     .get-a-quote__container-contact-bar {
         padding-top: 15px;
+    }
+}
+@media (max-width: 375px) {
+    .wrapper {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    header {
+        height: 90px;
+        border-bottom: none;
+    }
+    .logo {
+        margin: 0 auto;
+        width: auto;
+    }
+    .navigation {
+        display: none;
+    }
+    .slider-block {
+        border-bottom: 2px solid #ea676b;
+        height: auto;
+    }
+    .slider-block__layout {
+        height: 211px;
+    }
+    .slider-block__second-slide-image {
+        width: 100%;
+        height: 190px;
+    }
+    .slider-block__left-arrow {
+        width: 14px;
+        height: 24px;
+        padding-top: 98px;
+        position: relative;
+        left: -32px;
+    }
+    .slider-block__phones-horizontal-screen {
+        height: 63px;
+        width: 116px;
+        border: 1px solid #c6c6c6;
+        left: 95px;
+        bottom: 48px;
+    }
+    .slider-block__right-arrow {
+        width: 14px;
+        height: 24px;
+        padding-top: 98px;
+    }
+    .slider-block__right-arrow-ico {
+        width: 14px;
+        height: 24px;
+        padding-left: 29px;
+    }
+    .slider-block__left-arrow-ico {
+        width: 14px;
+        height: 24px;
+    }
+    .slider-block__phones-vertical {
+        top: -32px;
+        left: -18px;
+    }
+    .slider-block__phones-vertical-base {
+        width: 79px;
+        height: 165px;
+    }
+    .slider-block__phones-vertical-shadow {
+        width: 86px;
+    }
+    .slider-block__phones-vertical-screen {
+        width: 63px;
+        height: 116px;
+        top: 75px;
+        left: 14px;
+        border: 1px solid #c6c6c6;
+    }
+    .slider-block__phones-vertical-screen-layer {
+        width: 200%;
+        height: 110%;
+        left: 0;
+        top: 0;
+    }
+    .slider-block__phones-vertical-outer {
+        width: 3px;
+        height: 3px;
+        left: 45px;
+        top: 58px;
+    }
+    .slider-block__phones-vertical-dot {
+        width: 1px;
+        height: 1px;
+        left: 46px;
+        top: 59px;
+    }
+    .slider-block__phones-vertical-speaker {
+        width: 13px;
+        height: 2px;
+        top: 63px;
+        left: 41px;
+    }
+    .slider-block__phones-vertical-circle {
+        width: 15px;
+        height: 15px;
+        left: 40px;
+        top: 195px;
+    }
+    .slider-block__phones-vertical-square {
+        width: 6px;
+        height: 6px;
+        left: 45px;
+        top: 200px;
+    }
+    .slider-block__phones-horizontal-base {
+        height: 79px;
+        width: 168px;
+        top: 63px;
+        right: -3px;
+        position: absolute;
+    }
+    .slider-block__phones-horizontal-shadow {
+        height: 86px;
+        width: 177px;
+        top: 64px;
+        right: -12px;
+    }
+    .slider-block__phones-horizontal-screen {
+        left: 124px;
+    }
+    .slider-block__phones-horizontal-screen-layer {
+        width: 100%;
+        height: 165%;
+        top: 0;
+        left: 0;
+    }
+    .slider-block__phones-horizontal-speaker {
+        width: 2px;
+        height: 13px;
+        right: 14px;
+        top: 96px;
+    }
+    .slider-block__phones-horizontal-outer {
+        width: 3px;
+        height: 3px;
+        right: 6px;
+        top: 101px;
+    }
+    .slider-block__phones-horizontal-dot {
+        width: 1px;
+        height: 1px;
+        right: 7px;
+        top: 102px;
+    }
+    .slider-block__phones-horizontal-circle {
+        width: 15px;
+        height: 15px;
+        bottom: 72px;
+        right: 145px;
+    }
+    .slider-block__phones-horizontal-square {
+        width: 6px;
+        height: 6px;
+        bottom: 76px;
+        right: 149px;
+    }
+    .services-block {
+        height: auto;
+    }
+    .services-block__container-item {
+        padding: 0 10px 35px 0;
+    }
+    .services-block__container-item:nth-child(n+4) {
+        padding: 0 10px 35px 0;
+    }
+    .services-block__description {
+        padding: 30px 10px 30px 0;
+    }
+    .services-block__description-text {
+        width: 100%;
+        text-align: start;
+    }
+    .portfolio {
+        padding-top: 35px;
+        height: auto;
+    }
+    .portfolio__layout {
+        padding: 0 30px 30px;
+    }
+    .portfolio__title {
+        padding: 0;
+    }
+    .portfolio__description {
+        padding: 0 0 15px 0;
+    }
+    .portfolio__navigation {
+        padding: 0 0 25px 0;
+    }
+    .portfolio__gallery {
+        width: 100%;
+    }
+    .portfolio__gallery-item {
+        width: 151px;
+        height: 128px;
+        margin: 0 10px 12px 0;
+    }
+    .portfolio__gallery-item:nth-child(2n) {
+        margin-right: 0;
+    }
+    .portfolio__gallery-item:nth-child(n+9) {
+        margin-bottom: 12px;
+    }
+    .border-screen {
+        width: 141px;
+        height: 118px;
+    }
+    .portfolio__gallery-item-image {
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+    }
+    .about-us {
+        padding-bottom: 45px;
+    }
+    .about-us__layout {
+        height: auto;
+        padding: 25px 30px 0;
+    }
+    .about-us__title {
+        padding: 0;
+    }
+    .about-us__description {
+        padding: 0 10px 20px 0;
+        text-align: left;
+    }
+    .about-us__gallery {
+        flex-direction: column;
+    }
+    .about-us__gallery-block {
+        padding: 0 0 35px 0;
+        width: 315px;
+    }
+    .about-us__gallery-block-image {
+        width: 315px;
+        height: 315px;
+    }
+    .about-us__gallery-block-text--block {
+        padding-bottom: 10px;
+    }
+    .get-a-quote {
+        height: auto;
+    }
+    .get-a-quote__layout {
+        padding: 45px 30px 0;
+    }
+    .get-a-quote__container {
+        flex-direction: column;
+    }
+    .get-a-quote__container-contact {
+        padding: 32px 0 42px 0;
+    }
+    .get-a-quote__container-form {
+        width: 100%;
+    }
+    .get-a-quote__container-form-input {
+        width: 91%;
+        margin-bottom: 12px;
+    }
+    .get-a-quote__container-form-button {
+        width: 100%;
+        height: 50px;
+    }
+    .get-a-quote__description--container {
+        padding-right: 5px;
+    }
+    .footer__layout-description {
+        display: none;
+    }
+    .footer__layout-text-social {
+        margin: 0 auto;
     }
 }

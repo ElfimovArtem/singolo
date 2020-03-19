@@ -252,6 +252,10 @@
     .get-a-quote__container-contact-bar {
         padding-top: 15px;
     }
+    #message {
+        top: 45%;
+        left: 35%;
+    }
 }
 @media (max-width: 375px) {
     .wrapper {
@@ -530,5 +534,17 @@
     }
     .footer__layout-text-social {
         margin: 0 auto;
+    }
+    .home-btn__services {
+        display: none;
+    }
+    .home-btn__about {
+        display: none;
+    }
+    .home-btn__portfolio {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
     }
 }

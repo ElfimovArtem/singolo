@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-mobile-menu.scss">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
   <link href="media-queries.css" rel="stylesheet" type="text/css">
@@ -14,6 +15,23 @@
   <header>
     <div class="wrapper">
       <div class="header__layout">
+        <div class="mobile-menu">
+          <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+              <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+              <div class="mobile-menu__container">
+              <div class="logo mobile">
+                <h1 class="logo__title mobile-logo">Singolo</h1>
+                <span class="logo__star">*</span>
+              </div>
+              <ul class="mobile-menu__list">
+                  <li class="mobile-menu__item"><a href="#Home" class="mobile-menu__link">Home</a></li>
+                  <li class="mobile-menu__item"><a href="#Services" class="mobile-menu__link">Services</a></li>
+                  <li class="mobile-menu__item"><a href="#Portfolio" class="mobile-menu__link">Portfolio</a></li>
+                  <li class="mobile-menu__item"><a href="#About" class="mobile-menu__link">About</a></li>
+                  <li class="mobile-menu__item"><a href="#Contact" class="mobile-menu__link">Contact</a></li>
+              </ul>
+              </div>
+        </div>
         <div class="logo">
           <h1 class="logo__title">Singolo</h1>
           <span class="logo__star">*</span>
